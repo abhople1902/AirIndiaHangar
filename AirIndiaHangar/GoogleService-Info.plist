@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyAiS_ltUaHkXOTZg6YTVmNNSbRGt1qZGAI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>145798359532</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.AyushBhople.AirIndiaHangar</string>
+	<key>PROJECT_ID</key>
+	<string>hangarbay-aaa0d</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hangarbay-aaa0d.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:145798359532:ios:640d1acd11f60b1e8d78c9</string>
+</dict>
+</plist>
