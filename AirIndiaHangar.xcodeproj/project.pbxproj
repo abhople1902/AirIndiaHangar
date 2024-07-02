@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D615F7DE2C31D9A20079040E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D615F7DD2C31D9A20079040E /* RegisterViewController.swift */; };
+		D6D10A862C33CED6002596F4 /* alertCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D10A852C33CED6002596F4 /* alertCreator.swift */; };
+		D6D1C6BE2C327FA300546C13 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D6D1C6BD2C327FA300546C13 /* FirebaseAuth */; };
+		D6D1C6C02C327FA300546C13 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D6D1C6BF2C327FA300546C13 /* FirebaseFirestore */; };
+		D6D1C6C22C327FA300546C13 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = D6D1C6C12C327FA300546C13 /* FirebaseStorage */; };
+		D6D1C6C42C328A1100546C13 /* DefectsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D1C6C32C328A1100546C13 /* DefectsListViewController.swift */; };
+		D6D1C6C72C328C8100546C13 /* DefectDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D1C6C62C328C8100546C13 /* DefectDataModel.swift */; };
+		D6D1C6C92C3291B300546C13 /* PrimaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D1C6C82C3291B300546C13 /* PrimaryCell.swift */; };
+		D6D1C6CB2C32AAE200546C13 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D1C6CA2C32AAE200546C13 /* LoginViewController.swift */; };
+		D6D1C6E72C32C57900546C13 /* DetectFaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D1C6E62C32C57900546C13 /* DetectFaultViewController.swift */; };
 		D6D5F5752C2E959F00B89441 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5F5742C2E959F00B89441 /* AppDelegate.swift */; };
 		D6D5F5772C2E959F00B89441 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5F5762C2E959F00B89441 /* SceneDelegate.swift */; };
 		D6D5F5792C2E959F00B89441 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5F5782C2E959F00B89441 /* ViewController.swift */; };
@@ -39,6 +49,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D615F7DD2C31D9A20079040E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		D6D10A852C33CED6002596F4 /* alertCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alertCreator.swift; sourceTree = "<group>"; };
+		D6D1C6C32C328A1100546C13 /* DefectsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefectsListViewController.swift; sourceTree = "<group>"; };
+		D6D1C6C62C328C8100546C13 /* DefectDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefectDataModel.swift; sourceTree = "<group>"; };
+		D6D1C6C82C3291B300546C13 /* PrimaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryCell.swift; sourceTree = "<group>"; };
+		D6D1C6CA2C32AAE200546C13 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D6D1C6E62C32C57900546C13 /* DetectFaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectFaultViewController.swift; sourceTree = "<group>"; };
 		D6D5F5712C2E959F00B89441 /* AirIndiaHangar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirIndiaHangar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6D5F5742C2E959F00B89441 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6D5F5762C2E959F00B89441 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +79,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6FCD34D2C3145BE00DF26A4 /* FirebaseAnalytics in Frameworks */,
+				D6D1C6C22C327FA300546C13 /* FirebaseStorage in Frameworks */,
+				D6D1C6BE2C327FA300546C13 /* FirebaseAuth in Frameworks */,
+				D6D1C6C02C327FA300546C13 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D6D1C6C52C328C6500546C13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6D1C6C62C328C8100546C13 /* DefectDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D6D5F5682C2E959F00B89441 = {
 			isa = PBXGroup;
 			children = (
@@ -105,10 +133,17 @@
 		D6D5F5732C2E959F00B89441 /* AirIndiaHangar */ = {
 			isa = PBXGroup;
 			children = (
+				D6D1C6C82C3291B300546C13 /* PrimaryCell.swift */,
+				D6D1C6C52C328C6500546C13 /* Model */,
 				D6D5F5742C2E959F00B89441 /* AppDelegate.swift */,
 				D6D5F5762C2E959F00B89441 /* SceneDelegate.swift */,
 				D6D5F5782C2E959F00B89441 /* ViewController.swift */,
 				D6D5F57A2C2E959F00B89441 /* Main.storyboard */,
+				D6D1C6E62C32C57900546C13 /* DetectFaultViewController.swift */,
+				D6D10A852C33CED6002596F4 /* alertCreator.swift */,
+				D6D1C6CA2C32AAE200546C13 /* LoginViewController.swift */,
+				D6D1C6C32C328A1100546C13 /* DefectsListViewController.swift */,
+				D615F7DD2C31D9A20079040E /* RegisterViewController.swift */,
 				D6D5F5802C2E95A000B89441 /* Assets.xcassets */,
 				D6D5F5822C2E95A000B89441 /* LaunchScreen.storyboard */,
 				D6D5F5852C2E95A000B89441 /* Info.plist */,
@@ -153,6 +188,9 @@
 			name = AirIndiaHangar;
 			packageProductDependencies = (
 				D6FCD34C2C3145BE00DF26A4 /* FirebaseAnalytics */,
+				D6D1C6BD2C327FA300546C13 /* FirebaseAuth */,
+				D6D1C6BF2C327FA300546C13 /* FirebaseFirestore */,
+				D6D1C6C12C327FA300546C13 /* FirebaseStorage */,
 			);
 			productName = AirIndiaHangar;
 			productReference = D6D5F5712C2E959F00B89441 /* AirIndiaHangar.app */;
@@ -273,9 +311,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6D1C6CB2C32AAE200546C13 /* LoginViewController.swift in Sources */,
+				D6D1C6C92C3291B300546C13 /* PrimaryCell.swift in Sources */,
 				D6D5F5792C2E959F00B89441 /* ViewController.swift in Sources */,
+				D6D1C6C42C328A1100546C13 /* DefectsListViewController.swift in Sources */,
+				D615F7DE2C31D9A20079040E /* RegisterViewController.swift in Sources */,
+				D6D1C6C72C328C8100546C13 /* DefectDataModel.swift in Sources */,
+				D6D1C6E72C32C57900546C13 /* DetectFaultViewController.swift in Sources */,
 				D6D5F57F2C2E959F00B89441 /* AirIndiaHangar.xcdatamodeld in Sources */,
 				D6D5F5752C2E959F00B89441 /* AppDelegate.swift in Sources */,
+				D6D10A862C33CED6002596F4 /* alertCreator.swift in Sources */,
 				D6D5F5772C2E959F00B89441 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -636,6 +681,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		D6D1C6BD2C327FA300546C13 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6FCD34B2C3145BE00DF26A4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		D6D1C6BF2C327FA300546C13 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6FCD34B2C3145BE00DF26A4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		D6D1C6C12C327FA300546C13 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6FCD34B2C3145BE00DF26A4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
 		D6FCD34C2C3145BE00DF26A4 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D6FCD34B2C3145BE00DF26A4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
