@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D615F7DE2C31D9A20079040E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D615F7DD2C31D9A20079040E /* RegisterViewController.swift */; };
 		D6D10A862C33CED6002596F4 /* alertCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D10A852C33CED6002596F4 /* alertCreator.swift */; };
+		D6D110392C345B9900A22B9D /* DefectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D110382C345B9900A22B9D /* DefectTests.swift */; };
 		D6D1C6BE2C327FA300546C13 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D6D1C6BD2C327FA300546C13 /* FirebaseAuth */; };
 		D6D1C6C02C327FA300546C13 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D6D1C6BF2C327FA300546C13 /* FirebaseFirestore */; };
 		D6D1C6C22C327FA300546C13 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = D6D1C6C12C327FA300546C13 /* FirebaseStorage */; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		D615F7DD2C31D9A20079040E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		D6D10A852C33CED6002596F4 /* alertCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alertCreator.swift; sourceTree = "<group>"; };
+		D6D110382C345B9900A22B9D /* DefectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefectTests.swift; sourceTree = "<group>"; };
 		D6D1C6C32C328A1100546C13 /* DefectsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefectsListViewController.swift; sourceTree = "<group>"; };
 		D6D1C6C62C328C8100546C13 /* DefectDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefectDataModel.swift; sourceTree = "<group>"; };
 		D6D1C6C82C3291B300546C13 /* PrimaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryCell.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				D6D1C6C62C328C8100546C13 /* DefectDataModel.swift */,
+				D6D10A852C33CED6002596F4 /* alertCreator.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -133,17 +136,11 @@
 		D6D5F5732C2E959F00B89441 /* AirIndiaHangar */ = {
 			isa = PBXGroup;
 			children = (
-				D6D1C6C82C3291B300546C13 /* PrimaryCell.swift */,
+				D6F7BBB52C3431F40017DE2C /* Controller */,
+				D6F7BBB42C3430FF0017DE2C /* View */,
 				D6D1C6C52C328C6500546C13 /* Model */,
 				D6D5F5742C2E959F00B89441 /* AppDelegate.swift */,
 				D6D5F5762C2E959F00B89441 /* SceneDelegate.swift */,
-				D6D5F5782C2E959F00B89441 /* ViewController.swift */,
-				D6D5F57A2C2E959F00B89441 /* Main.storyboard */,
-				D6D1C6E62C32C57900546C13 /* DetectFaultViewController.swift */,
-				D6D10A852C33CED6002596F4 /* alertCreator.swift */,
-				D6D1C6CA2C32AAE200546C13 /* LoginViewController.swift */,
-				D6D1C6C32C328A1100546C13 /* DefectsListViewController.swift */,
-				D615F7DD2C31D9A20079040E /* RegisterViewController.swift */,
 				D6D5F5802C2E95A000B89441 /* Assets.xcassets */,
 				D6D5F5822C2E95A000B89441 /* LaunchScreen.storyboard */,
 				D6D5F5852C2E95A000B89441 /* Info.plist */,
@@ -157,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				D6D5F58E2C2E95A000B89441 /* AirIndiaHangarTests.swift */,
+				D6D110382C345B9900A22B9D /* DefectTests.swift */,
 			);
 			path = AirIndiaHangarTests;
 			sourceTree = "<group>";
@@ -168,6 +166,27 @@
 				D6D5F59A2C2E95A000B89441 /* AirIndiaHangarUITestsLaunchTests.swift */,
 			);
 			path = AirIndiaHangarUITests;
+			sourceTree = "<group>";
+		};
+		D6F7BBB42C3430FF0017DE2C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6D5F57A2C2E959F00B89441 /* Main.storyboard */,
+				D6D1C6C82C3291B300546C13 /* PrimaryCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D6F7BBB52C3431F40017DE2C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D6D5F5782C2E959F00B89441 /* ViewController.swift */,
+				D6D1C6E62C32C57900546C13 /* DetectFaultViewController.swift */,
+				D6D1C6CA2C32AAE200546C13 /* LoginViewController.swift */,
+				D6D1C6C32C328A1100546C13 /* DefectsListViewController.swift */,
+				D615F7DD2C31D9A20079040E /* RegisterViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6D110392C345B9900A22B9D /* DefectTests.swift in Sources */,
 				D6D5F58F2C2E95A000B89441 /* AirIndiaHangarTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,7 +17,7 @@ class DetectFaultViewController: UIViewController, UIImagePickerControllerDelega
     let defectAddedConfirmAlert = alertCreator.initializeAlert("Defect saved", "Defect is saved in core data", actionTitle: "Ok", actionStyle: "default")
     let defectNotAddedAlert = alertCreator.initializeAlert("Unable to save defect", "Unable to save core data context", actionTitle: "Ok", actionStyle: "default")
     
-    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     let dataFilePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("defects.plist")
     

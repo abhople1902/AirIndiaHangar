@@ -55,7 +55,7 @@ class DefectsListViewController: UIViewController {
                 defectDataArray.append(tempObject)
             }
         } catch {
-            
+            print(error.localizedDescription)
         }
     }
     
@@ -105,4 +105,47 @@ extension DefectsListViewController: UITableViewDataSource {
 //MARK: - Table view delegate methods
 extension DefectsListViewController: UITableViewDelegate {
     
+    func saveItems() {
+        do {
+            try context.save()
+            defectDataArray.removeAll()
+            prepareData()
+            defectsTableView.reloadData()
+        } catch {
+            print("Error saving context: \(error)")
+        }
+    }
+    
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { (action, view, handler) in
+            self.handleDeletion(at: indexPath)
+            handler(true)
+        }
+        deleteAction.backgroundColor = .red
+        return UISwipeActionsConfiguration(actions: [deleteAction])
+    }
+    
+    func handleDeletion(at indexPath: IndexPath) {
+        
+        let defect = defectDataArray[indexPath.row]
+        let nameOfDefectToBeDeleted = defect.defectName
+        
+        let fetchRequest: NSFetchRequest<Defect> = Defect.fetchRequest()
+        fetchRequest.predicate = NSPredicate(format: "name = %d", nameOfDefectToBeDeleted)
+        
+        do {
+//            guard let test = try context.fetch(fetchRequest) as? [Defect], let objectDelete = test.first else {
+//                return
+//            }
+            let test = try context.fetch(fetchRequest) as? [Defect]
+            let objectDelete = test?.first as? NSManagedObject
+            context.delete(objectDelete!)
+            self.saveItems()
+            print("Deleted item at \(indexPath)")
+//            defectDataArray.deleteRows(at: [indexPath], with: .automatic)
+        } catch {
+            print(error)
+        }
+    }
 }
